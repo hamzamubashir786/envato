@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+    outline: none;
+    border: none;
+    list-style: none;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    padding: 0px 20px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav img {
+    width: 120px;
+}
+
+nav button {
+    text-transform: capitalize;
+    background-color: #7AA93C;
+    color: white;
+    padding: 5px 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 12px;
+
+}
+
+.nav1 {
+    position: relative;
+    padding: 10px 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 50px;
+    background-color: white;
+    z-index: 100;
+}
+
+.socialicon i {
+    font-size: 13px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 90px;
+}
+
+.navul {
+    text-transform: capitalize;
+}
+
+.navul li {
+    font-size: 18px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.navul li:first-child {
+    color: red;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 16.6666%;
+
+}
+
+.child {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    scroll-snap-align: start;
+}
+
+.contant {
+    background-color: white;
+    padding: 10px 30px;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.contant span:first-child {
+    color: #ED4F4E;
+}
+
+.contant2 span:first-child {
+    color: #EEF091;
+}
+
+.contant3 span:first-child {
+    color: #0166D5;
+}
+
+.contant4 span:first-child {
+    color: #56DB91;
+}
+
+.contant5 span:first-child {
+    color: #EC5EB2;
+}
+
+.contant6 span:first-child {
+    color: #84418E;
+}
+
+.child p {
+    color: white;
+    margin: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.child1 {
+    background-image: url(./img/1.jpg);
+}
+
+.child2 {
+    background-image: url(./img/2.jpg);
+}
+
+.child3 {
+    background-image: url(./img/3.jpg);
+}
+
+.child4 {
+    background-image: url(./img/4.jpg);
+}
+
+.child5 {
+    background-image: url(./img/5.jpg);
+}
+
+.child6 {
+    background-image: url(./img/6.jpg);
+}
+
+.child-abso {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px;
+    scroll-snap-align: start;
+}
+
+footer div {
+    margin: 20px 0;
+    letter-spacing: 10px;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+
+@media screen and (max-width:1000px) {
+    .socialicon {
+        display: none;
+    }
+
+    .logo {
+        position: static;
+    }
+}
+
+@media screen and (max-width:710px) {
+    .contant {
+        font-size: 40px;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .contant {
+        font-size: 30px;
+        padding: 10px 10px;
+    }
+}
+
+@media screen and (max-width:410px) {
+    .contant {
+        font-size: 25px;
+        padding: 10px 10px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .contant {
+        text-align: center;
+        width: 80%;
+        padding: 10px 10px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .navul li {
+        display: none;
+    }
+
+    .navul i {
+        color: white;
+        cursor: pointer;
+        padding: 10px 15px;
+        background-color: red;
+    }
+}
